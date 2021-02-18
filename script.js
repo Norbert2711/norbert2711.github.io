@@ -174,6 +174,7 @@ $(document).ready(function() {
     var resultTickets = $(this).find('[name="tickets"]').val();
     var resultTicketsFor = $(this).find('[name="ticketsFor"]').val();
     var resultNotes = $(this).find('[name="notes"]').val();
+    var resultVehicles = $(this).find('[name="vehicles"]').val();
     var resultMrd5 = $(this).find('[name="mrd5"]').val();
     var resultLeads = $(this).find('[name="leads"]').val();
 
