@@ -178,7 +178,7 @@ $(document).ready(function() {
     var resultMrd5 = $(this).find('[name="mrd5"]').val();
     var resultLeads = $(this).find('[name="leads"]').val();
 
-    var requestUrl = apiRoot + 'createTask';
+    var requestUrl = apiRoot + 'createResult';
 
     $.ajax({
       url: requestUrl,
