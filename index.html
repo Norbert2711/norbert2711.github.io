@@ -27,7 +27,7 @@ background-size: 1540px 1520px;
     <form
         class="datatable__row datatable__row--add"
         method="POST"
-        action="http://localhost:8080/v1/results/createResult"
+        action="http://localhost:8080/results/createResult"
         data-result-add-form
     >
 
@@ -165,7 +165,7 @@ background-size: 1540px 1520px;
 
   <section class="datatable">
     <h2>Zapisane wyniki</h2>
-    <div class="datatable__tasks-container" data-result-container></div>
+    <div class="datatable__results-container" data-results-container></div>
   </section>
 </main>
 
@@ -175,7 +175,7 @@ background-size: 1540px 1520px;
 
 <div class="template" data-datatable-row-template>
   <form class="datatable__row" data-result-id="0">
-<fieldset style="border:#FFFFFF 2px SOLID>"><legend><font color="black" class="datatable__row-section" data-result-day-section>
+<fieldset style="border:#FFFFFF 2px SOLID>"><legend><font color="black" class="datatable__row-section" data-result-name-section>
         <label class="datatable__input-label">
           Data
         </legend>
@@ -184,100 +184,100 @@ background-size: 1540px 1520px;
         <p class="datatable__field-value" data-result-name-paragraph></p>
       </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-patrolType-section>
       <label class="datatable__input-label">
         Typ patrolu
       </label>
-      <textarea patrol="patrolType" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-patrolType-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-names-section>
       <label class="datatable__input-label">
         Nazwisko
       </label>
-      <textarea patrol="name" placeholder="Wprowadż poprawnie" data-result-content-input required minlength="3"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie" data-result-names-input required minlength="3"></textarea>
+      <p class="datatable__field-value" data-result-names-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-people-section>
       <label class="datatable__input-label">
         Wylegitymowano
       </label>
-      <textarea patrol="people" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-people-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-interventions-section>
       <label class="datatable__input-label">
         Ilość interwencji
       </label>
-      <textarea patrol="interventions" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-interventions-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-instruction-section>
       <label class="datatable__input-label">
         Ilość pouczeń
       </label>
-      <textarea patrol="instruction" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-instruction-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-instructionFor-section>
       <label class="datatable__input-label">
         Pouczeń za co
       </label>
-      <textarea patrol="instructionFor" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-instructionFor-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-tickets-section>
       <label class="datatable__input-label">
         Ilość Mandatów
       </label>
-      <textarea patrol="tickets" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-tickets-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-ticketsFor-section>
       <label class="datatable__input-label">
         Mandatów za co
       </label>
-      <textarea patrol="ticketsFor" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-ticketsFor-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-notes-section>
       <label class="datatable__input-label">
         Sporządzonych notatek
       </label>
-      <textarea patrol="notes" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-notes-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-vehicles-section>
       <label class="datatable__input-label">
         Kontroli pojazdów
       </label>
-      <textarea patrol="vehicles" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-vehicles-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-mrd5-section>
       <label class="datatable__input-label">
         Sporządzonych kart MRD5
       </label>
-      <textarea patrol="mrd5" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-mrd5-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-content-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-leads-section>
       <label class="datatable__input-label">
         Doprowadzeni
       </label>
-      <textarea patrol="leads" placeholder="Wprowadż poprawnie"></textarea>
-      <p class="datatable__field-value" data-result-content-paragraph></p>
+      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-leads-paragraph></p>
     </fieldset>
 
     <fieldset class="datatable__row-section datatable__row-section--button-section">

@@ -6,14 +6,12 @@ $(document).ready(function() {
 
   getAllResults();
 
-
-
   function createElement(data) {
     var element = $(datatableRowTemplate).clone();
 
     element.attr('data-result-id', data.id);
-    element.find('[data-result-data-section] [data-result-data-paragraph]').text(data.day);
-    element.find('[data-result-data-section] [data-result-data-input]').val(data.day);
+    element.find('[data-result-time-section] [data-result-time-paragraph]').text(data.day);
+    element.find('[data-result-time-section] [data-result-time-input]').val(data.day);
 
     element.find('[data-result-patrolType-section] [data-result-patrolType-paragraph]').text(data.patrolType);
     element.find('[data-result-patrolType-section] [data-result-patrolType-input]').val(data.patrolType);
