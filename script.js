@@ -147,7 +147,7 @@ $(document).ready(function() {
 
     $.ajax({
       url: requestUrl + '/?' + $.param({
-        resultId: resultId
+        resultId: id
       }),
       method: 'DELETE',
       success: function() {
