@@ -10,14 +10,14 @@ $(document).ready(function() {
     var element = $(datatableRowTemplate).clone();
 
     element.attr('data-result-id', data.id);
-    element.find('[data-result-day-section] [data-result-day-paragraph]').text(data.day);
-    element.find('[data-result-day-section] [data-result-day-input]').val(data.day);
+    //element.find('[data-result-day-section] [data-result-day-paragraph]').text(data.day);
+   // element.find('[data-result-day-section] [data-result-day-input]').val(data.day);
 
     element.find('[data-result-patrolType-section] [data-result-patrolType-paragraph]').text(data.patrolType);
     element.find('[data-result-patrolType-section] [data-result-patrolType-input]').val(data.patrolType);
 
-    element.find('[data-result-nick-section] [data-result-nick-paragraph]').text(data.nick);
-    element.find('[data-result-nick-section] [data-result-nick-input]').val(data.nick);
+    //element.find('[data-result-nick-section] [data-result-nick-paragraph]').text(data.nick);
+    //element.find('[data-result-nick-section] [data-result-nick-input]').val(data.nick);
 
     element.find('[data-result-people-section] [data-result-people-paragraph]').text(data.people);
     element.find('[data-result-people-section] [data-result-people-input]').val(data.people);
@@ -75,9 +75,9 @@ $(document).ready(function() {
   function handleResultUpdateRequest() {
     var parentEl = $(this).parent().parent();
     var resultId = parentEl.attr('data-result-id');
-    var resultData = parentEl.find('[data-result-day-input]').val();
+    //var resultData = parentEl.find('[data-result-day-input]').val();
     var resultPatrolType = parentEl.find('[data-result-patrolType-input]').val();
-    var resultName = parentEl.find('[data-result-nick-input]').val();
+   // var resultName = parentEl.find('[data-result-nick-input]').val();
     var resultPeople = parentEl.find('[data-result-people-input]').val();
     var resultInterventions = parentEl.find('[data-result-interventions-input]').val();
     var resultInstruction = parentEl.find('[data-result-instruction-input]').val();
@@ -100,9 +100,9 @@ $(document).ready(function() {
       data: JSON.stringify({
 
         id: resultId,
-        day: resultData,
+       // day: resultData,
         patrolType: resultPatrolType,
-        nick: resultName,
+       // nick: resultName,
         people: resultPeople,
         interventions: resultInterventions,
         instruction: resultInstruction,
@@ -118,9 +118,9 @@ $(document).ready(function() {
 
       success: function(data) {
         parentEl.attr('data-result-id', data.id).toggleClass('datatable__row--editing');
-        parentEl.find('[data-result-day-paragraph]').text(resultData);
+       // parentEl.find('[data-result-day-paragraph]').text(resultData);
         parentEl.find('[data-result-patrolType-paragraph]').text(resultPatrolType);
-        parentEl.find('[data-result-nick-paragraph]').text(resultName);
+       // parentEl.find('[data-result-nick-paragraph]').text(resultName);
         parentEl.find('[data-result-people-paragraph]').text(resultPeople);
         parentEl.find('[data-result-interventions-paragraph]').text(resultInterventions);
         parentEl.find('[data-result-instruction-paragraph]').text(resultInstruction);
@@ -160,9 +160,9 @@ $(document).ready(function() {
   function handleResultSubmitRequest(event) {
     event.preventDefault();
 
-    var resultData = $(this).find('[name="day"]').val();
+   // var resultData = $(this).find('[name="day"]').val();
     var resultPatrolType = $(this).find('[name="patrolType"]').val();
-    var resultName = $(this).find('[name="nick"]').val();
+   // var resultName = $(this).find('[name="nick"]').val();
     var resultPeople = $(this).find('[name="people"]').val();
     var resultInterventions = $(this).find('[name="interventions"]').val();
     var resultInstruction = $(this).find('[name="instruction"]').val();
@@ -184,9 +184,9 @@ $(document).ready(function() {
       dataType: 'json',
       data: JSON.stringify({
 
-        day: resultData,
+       // day: resultData,
         patrolType: resultPatrolType,
-        nick: resultName,
+       // nick: resultName,
         people: resultPeople,
         interventions: resultInterventions,
         instruction: resultInstruction,
@@ -212,9 +212,9 @@ $(document).ready(function() {
     var parentEl = $(this).parent().parent();
     parentEl.toggleClass('datatable__row--editing');
 
-    var resultData = parentEl.find('[data-result-day-paragraph]').text();
+   // var resultData = parentEl.find('[data-result-day-paragraph]').text();
     var resultPatrolType = parentEl.find('[data-result-patrolType-paragraph]').text();
-    var resultName = parentEl.find('[data-result-nick-paragraph]').text();
+   // var resultName = parentEl.find('[data-result-nick-paragraph]').text();
     var resultPeople = parentEl.find('[data-result-people-paragraph]').text();
     var resultInterventions = parentEl.find('[data-result-interventions-paragraph]').text();
     var resultInstruction = parentEl.find('[data-result-instruction-paragraph]').text();
@@ -226,9 +226,9 @@ $(document).ready(function() {
     var resultMrd5 = parentEl.find('[data-result-mrd5-paragraph]').text();
     var resultLeads = parentEl.find('[data-result-leads-paragraph]').text();
 
-        parentEl.find('[data-result-day-paragraph]').text(resultData);
+       // parentEl.find('[data-result-day-paragraph]').text(resultData);
         parentEl.find('[data-result-patrolType-paragraph]').text(resultPatrolType);
-        parentEl.find('[data-result-nick-paragraph]').text(resultName);
+       // parentEl.find('[data-result-nick-paragraph]').text(resultName);
         parentEl.find('[data-result-people-paragraph]').text(resultPeople);
         parentEl.find('[data-result-interventions-paragraph]').text(resultInterventions);
         parentEl.find('[data-result-instruction-paragraph]').text(resultInstruction);
