@@ -16,8 +16,8 @@ $(document).ready(function() {
     element.find('[data-result-patrolType-section] [data-result-patrolType-paragraph]').text(data.patrolType);
     element.find('[data-result-patrolType-section] [data-result-patrolType-input]').val(data.patrolType);
 
-    element.find('[data-result-name-section] [data-result-name-paragraph]').text(data.name);
-    element.find('[data-result-name-section] [data-result-name-input]').val(data.name);
+    element.find('[data-result-nick-section] [data-result-nick-paragraph]').text(data.nick);
+    element.find('[data-result-nick-section] [data-result-nick-input]').val(data.nick);
 
     element.find('[data-result-people-section] [data-result-people-paragraph]').text(data.people);
     element.find('[data-result-people-section] [data-result-people-input]').val(data.people);
@@ -77,7 +77,7 @@ $(document).ready(function() {
     var resultId = parentEl.attr('data-result-id');
     var resultData = parentEl.find('[data-result-day-input]').val();
     var resultPatrolType = parentEl.find('[data-result-patrolType-input]').val();
-    var resultName = parentEl.find('[data-result-name-input]').val();
+    var resultName = parentEl.find('[data-result-nick-input]').val();
     var resultPeople = parentEl.find('[data-result-people-input]').val();
     var resultInterventions = parentEl.find('[data-result-interventions-input]').val();
     var resultInstruction = parentEl.find('[data-result-instruction-input]').val();
@@ -102,7 +102,7 @@ $(document).ready(function() {
         id: resultId,
         day: resultData,
         patrolType: resultPatrolType,
-        name: resultName,
+        nick: resultName,
         people: resultPeople,
         interventions: resultInterventions,
         instruction: resultInstruction,
@@ -120,7 +120,7 @@ $(document).ready(function() {
         parentEl.attr('data-result-id', data.id).toggleClass('datatable__row--editing');
         parentEl.find('[data-result-day-paragraph]').text(resultData);
         parentEl.find('[data-result-patrolType-paragraph]').text(resultPatrolType);
-        parentEl.find('[data-result-name-paragraph]').text(resultName);
+        parentEl.find('[data-result-nick-paragraph]').text(resultName);
         parentEl.find('[data-result-people-paragraph]').text(resultPeople);
         parentEl.find('[data-result-interventions-paragraph]').text(resultInterventions);
         parentEl.find('[data-result-instruction-paragraph]').text(resultInstruction);
@@ -162,7 +162,7 @@ $(document).ready(function() {
 
     var resultData = $(this).find('[name="day"]').val();
     var resultPatrolType = $(this).find('[name="patrolType"]').val();
-    var resultName = $(this).find('[name="name"]').val();
+    var resultName = $(this).find('[name="nick"]').val();
     var resultPeople = $(this).find('[name="people"]').val();
     var resultInterventions = $(this).find('[name="interventions"]').val();
     var resultInstruction = $(this).find('[name="instruction"]').val();
@@ -186,7 +186,7 @@ $(document).ready(function() {
 
         day: resultData,
         patrolType: resultPatrolType,
-        name: resultName,
+        nick: resultName,
         people: resultPeople,
         interventions: resultInterventions,
         instruction: resultInstruction,
