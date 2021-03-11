@@ -219,6 +219,7 @@ $(document).ready(function() {
     var resultName = parentEl.find('[data-result-name-paragraph]').text();
     var resultPeople = parentEl.find('[data-result-patrolType-paragraph]').text();
     var resultInterventions = parentEl.find('[data-result-interventions-paragraph]').text();
+    var resultInstruction = parentEl.find('[data-result-instruction-paragraph]').text();
     var resultInstructionFor = parentEl.find('[data-result-instructionFor-paragraph]').text();
     var resultTickets = parentEl.find('[data-result-tickets-paragraph]').text();
     var resultTicketsFor = parentEl.find('[data-result-ticketsFor-paragraph]').text();
