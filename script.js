@@ -214,8 +214,8 @@ $(document).ready(function() {
 
     var resultData = parentEl.find('[data-result-day-paragraph]').text();
     var resultPatrolType = parentEl.find('[data-result-patrolType-paragraph]').text();
-    var resultName = parentEl.find('[data-result-name-paragraph]').text();
-    var resultPeople = parentEl.find('[data-result-patrolType-paragraph]').text();
+    var resultName = parentEl.find('[data-result-nick-paragraph]').text();
+    var resultPeople = parentEl.find('[data-result-people-paragraph]').text();
     var resultInterventions = parentEl.find('[data-result-interventions-paragraph]').text();
     var resultInstruction = parentEl.find('[data-result-instruction-paragraph]').text();
     var resultInstructionFor = parentEl.find('[data-result-instructionFor-paragraph]').text();
@@ -228,7 +228,7 @@ $(document).ready(function() {
 
         parentEl.find('[data-result-day-paragraph]').text(resultData);
         parentEl.find('[data-result-patrolType-paragraph]').text(resultPatrolType);
-        parentEl.find('[data-result-name-paragraph]').text(resultName);
+        parentEl.find('[data-result-nick-paragraph]').text(resultName);
         parentEl.find('[data-result-people-paragraph]').text(resultPeople);
         parentEl.find('[data-result-interventions-paragraph]').text(resultInterventions);
         parentEl.find('[data-result-instruction-paragraph]').text(resultInstruction);
