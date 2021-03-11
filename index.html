@@ -5,7 +5,7 @@
 border: 2px solid black;
   padding: 25px;
   background: url(https://yzoja.pl/wp-content/uploads/2015/10/P_20151006_1419041-800x600.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 background-size: 1540px 1520px;
 }
 
@@ -28,22 +28,22 @@ background-size: 1540px 1520px;
         class="datatable__row datatable__row--add"
         method="POST"
         action="http://localhost:8080/results/createResult"
-        data-result-add-form
-    >
+        data-result-add-form>
 
   <!-- Pola do wprowadzenia wynikow -->
-
-      <fieldset>
-        <legend><font color="black"class="datatable__row-section datatable__row-section--input-section">
+<div class="divRow">
+      <div class="cellOne">
+      <fieldset class="datatable__row-section datatable__row-section--input-section">
         <label class="datatable__input-label">
 <font size="4">
           Data:
 </font>
-        </legend>
+
         </label>
         <textarea name="day" placeholder="Podaj datę" required minlength="5"></textarea>
       </fieldset>
 
+        
 
       <fieldset class="datatable__row-section datatable__row-section--input-section">
         <label class="datatable__input-label">
@@ -162,10 +162,12 @@ background-size: 1540px 1520px;
     </form>
   </section>
 </font>
-
+</div>
+</div>
   <section class="datatable">
     <h2>Zapisane wyniki</h2>
     <div class="datatable__results-container" data-results-container></div>
+
   </section>
 </main>
 
@@ -175,10 +177,12 @@ background-size: 1540px 1520px;
 
 <div class="template" data-datatable-row-template>
   <form class="datatable__row" data-result-id="0">
-<fieldset style="border:#FFFFFF 2px SOLID>"><legend><font color="black" class="datatable__row-section" data-result-name-section>
+    <div class="divRow">
+      <div class="cellOne">
+
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-day-input-section>
         <label class="datatable__input-label">
           Data
-        </legend>
         </label>
         <input type="text" name="day" placeholder="Wprowadź poprawną datę" data-result-name-input required minlength="3" >
         <p class="datatable__field-value" data-result-name-paragraph></p>
