@@ -76,7 +76,7 @@ $(document).ready(function() {
 
   function handleResultUpdateRequest() {
     var parentEl = $(this).parent().parent();
-    var resultId = parentEl.attr('data-result-id');
+    var id = parentEl.attr('data-result-id');
     var resultData = parentEl.find('[data-result-day-input]').val();
     var resultPatrolType = parentEl.find('[data-result-patrolType-input]').val();
     var resultName = parentEl.find('[data-result-name-input]').val();
@@ -101,7 +101,7 @@ $(document).ready(function() {
       dataType: 'json',
       data: JSON.stringify({
 
-        id: resultId,
+        id: id,
         day: resultData,
         patrolType: resultPatrolType,
         name: resultName,
@@ -142,7 +142,7 @@ $(document).ready(function() {
 
   function handleResultDeleteRequest() {
     var parentEl = $(this).parent().parent();
-    var resultId = parentEl.attr('data-result-id');
+    var id = parentEl.attr('data-result-id');
     var requestUrl = apiRoot + 'deleteResult';
 
     $.ajax({
