@@ -34,14 +34,14 @@ background-size: 1540px 1520px;
 <div class="divRow">
       <div class="cellOne">
 
-      <fieldset class="datatable__row-section datatable__row-section--input-section">
+   <fieldset class="datatable__row-section datatable__row-section--input-section">
         <label class="datatable__input-label">
 <font size="4">
           Data:
-</font>
+        </font>
 
         </label>
-        <textarea name="day" placeholder="Podaj datę"></textarea>
+        <textarea name="day" placeholder="Podaj dzisiejszą datę"></textarea>
       </fieldset>
 
       <fieldset class="datatable__row-section datatable__row-section--input-section">
@@ -59,7 +59,6 @@ background-size: 1540px 1520px;
           <font size="4">
           Nazwisko:
         </font>
-
         </label>
         <textarea name="nick" placeholder="Podaj swoje nazwisko"></textarea>
       </fieldset>
@@ -183,23 +182,23 @@ background-size: 1540px 1520px;
         <label class="datatable__input-label">
           Data:
         </label>
-        <input type="text" name="day" placeholder="Wprowadź poprawną datę" data-result-name-input required minlength="3" >
-        <p class="datatable__field-value" data-result-name-paragraph></p>
+        <input type="text" name="day" placeholder="Wprowadź poprawną datę" data-result-day-input required minlength="3" >
+        <p class="datatable__field-value" data-result-day-paragraph></p>
       </fieldset>
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-patrolType-section>
       <label class="datatable__input-label">
         Typ patrolu:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="patrolType" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-patrolType-paragraph></p>
     </fieldset>
 
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-names-section>
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-nick-section>
       <label class="datatable__input-label">
         Nazwisko:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie" data-result-names-input required minlength="3"></textarea>
+      <textarea name="nick" placeholder="Wprowadż poprawnie" data-result-nick-input required minlength="3"></textarea>
       <p class="datatable__field-value" data-result-names-paragraph></p>
     </fieldset>
 
@@ -207,7 +206,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Wylegitymowano:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="people" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-people-paragraph></p>
     </fieldset>
 
@@ -215,7 +214,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Ilość interwencji:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="interventions" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-interventions-paragraph></p>
     </fieldset>
 
@@ -223,7 +222,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Ilość pouczeń:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="instruction" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-instruction-paragraph></p>
     </fieldset>
 
@@ -231,7 +230,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Pouczeń za co:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="instructionFor" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-instructionFor-paragraph></p>
     </fieldset>
 
@@ -239,7 +238,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Ilość Mandatów:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="tickets" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-tickets-paragraph></p>
     </fieldset>
 
@@ -247,7 +246,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Mandatów za co:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="ticketsFor" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-ticketsFor-paragraph></p>
     </fieldset>
 
@@ -255,7 +254,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Sporządzonych notatek:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="notes" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-notes-paragraph></p>
     </fieldset>
 
@@ -263,7 +262,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Kontroli pojazdów:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="vehicles" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-vehicles-paragraph></p>
     </fieldset>
 
@@ -271,7 +270,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Sporządzonych kart MRD5:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="mrd5" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-mrd5-paragraph></p>
     </fieldset>
 
@@ -279,7 +278,7 @@ background-size: 1540px 1520px;
       <label class="datatable__input-label">
         Doprowadzeni:
       </label>
-      <textarea name="day" placeholder="Wprowadż poprawnie"></textarea>
+      <textarea name="leads" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-leads-paragraph></p>
     </fieldset>
 
