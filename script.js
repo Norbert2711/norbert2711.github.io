@@ -136,8 +136,6 @@ $(document).ready(function() {
     });
   }
 
-
-
   function handleResultDeleteRequest() {
     var parentEl = $(this).parent().parent();
     var resultId = parentEl.attr('data-result-id');
@@ -154,8 +152,6 @@ $(document).ready(function() {
       }
     })
   }
-
-
 
   function handleResultSubmitRequest(event) {
     event.preventDefault();
