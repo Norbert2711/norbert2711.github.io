@@ -31,39 +31,38 @@ background-size: 1540px 1520px;
         data-result-add-form>
 
   <!-- Pola do wprowadzenia wynikow -->
+
 <div class="divRow">
       <div class="cellOne">
-<!--
-   <fieldset class="datatable__row-section datatable__row-section--input-section">
-        <label class="datatable__input-label">
-<font size="4">
-          Data:
-        </font>
 
+
+<fieldset class="datatable__row-section datatable__row-section--input-section">
+        <label class="datatable__input-label">
+          <font size="4">
+          Data:
+          </font>
         </label>
-        <textarea name="day" placeholder="Podaj dzisiejszą datę"></textarea>
+        <textarea type="text" name="time" placeholder="Podaj pełną datę" required minlength="3"></textarea>
       </fieldset>
--->
 
       <fieldset class="datatable__row-section datatable__row-section--input-section">
         <label class="datatable__input-label">
 <font size="4">
           Typ patrolu:
         </font>
-
         </label>
         <textarea name="patrolType" placeholder="Zmot/Pieszy?"></textarea>
       </fieldset>
-<!--
-        <fieldset class="datatable__row-section datatable__row-section--input-section">
+
+<fieldset class="datatable__row-section datatable__row-section--input-section">
         <label class="datatable__input-label">
           <font size="4">
           Nazwisko:
-        </font>
+          </font>
         </label>
-        <textarea name="nick" placeholder="Podaj swoje nazwisko"></textarea>
+        <textarea type="text" name="nick" placeholder="Podaj nazwisko" required minlength="3"></textarea>
       </fieldset>
--->
+
 <fieldset class="datatable__row-section datatable__row-section--input-section">
         <label class="datatable__input-label">
           <font size="4">
@@ -178,15 +177,23 @@ background-size: 1540px 1520px;
   <form class="datatable__row" data-result-id="0">
     <div class="divRow">
       <div class="cellOne">
-<!--
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-day-input-section>
-        <label class="datatable__input-label">
-          Data:
-        </label>
-        <input type="text" name="day" placeholder="Wprowadź poprawną datę" data-result-day-input required minlength="3" >
-        <p class="datatable__field-value" data-result-day-paragraph></p>
-      </fieldset>
--->
+
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-time-section>
+      <label class="datatable__input-label">
+        Data:
+      </label>
+      <textarea name="time" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-time-paragraph></p>
+    </fieldset>
+
+<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-nick-section>
+      <label class="datatable__input-label">
+        Nazwisko:
+      </label>
+      <textarea name="nick" placeholder="Wprowadż poprawnie"></textarea>
+      <p class="datatable__field-value" data-result-nick-paragraph></p>
+    </fieldset>
+
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-patrolType-section>
       <label class="datatable__input-label">
         Typ patrolu:
@@ -194,15 +201,7 @@ background-size: 1540px 1520px;
       <textarea name="patrolType" placeholder="Wprowadż poprawnie"></textarea>
       <p class="datatable__field-value" data-result-patrolType-paragraph></p>
     </fieldset>
-<!--
-<fieldset class="datatable__row-section datatable__row-section--input-section" data-result-nick-section>
-      <label class="datatable__input-label">
-        Nazwisko:
-      </label>
-      <textarea name="nick" placeholder="Wprowadż poprawnie" data-result-nick-input required minlength="3"></textarea>
-      <p class="datatable__field-value" data-result-names-paragraph></p>
-    </fieldset>
--->
+
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-people-section>
       <label class="datatable__input-label">
         Wylegitymowano:
