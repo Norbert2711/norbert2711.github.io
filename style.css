@@ -1,14 +1,16 @@
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
   font-weight: normal;
   margin: 0;
   padding: 0; }
+input {
+    width: 200px;
+}
 
-input,
 textarea {
-  width: 100%;
+  width: 200%;
   padding: 5px;
   margin: 0;
   border-radius: 5px;
@@ -48,11 +50,12 @@ body {
   font-weight: 400; }
 
 .datatable__row {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  border: 5px solid #ccc;
+  border: 0px solid #ccc;
   border-bottom: none;
   margin: 0; }
 
@@ -61,13 +64,18 @@ body {
   border-top-right-radius: 4px; }
 
 .datatable__row:last-of-type {
-  border-bottom: 5px solid #ccc;
+  border-bottom: 10px solid #e69900;
+  border-top: 10px solid #e69900;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px; }
 
 .datatable__row input,
-.datatable__row textarea {
-  display: none; }
+
+
+.datatable__row textarea {          
+    width: 300px;
+ display: none;
+ background: #FAEBD7 }
 
 .datatable__row .datatable__button--editing {
   display: none; }
@@ -89,11 +97,16 @@ body {
 .datatable__row--add textarea {
   display: block; }
 
-.datatable__field-value {
+.datatable__field-value {   
+width: 160px;  
+table-layout: auto;
   margin-bottom: 0;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: bold;
   font-weight: 900px;
-  color: blue; }
+  color: #1a53ff;
+  border: 2px solid black;
+   }
 
 .datatable__row-section {
   border: none;
