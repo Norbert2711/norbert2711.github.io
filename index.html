@@ -2,7 +2,7 @@
 <head>
   <style>
     body {
-border: 2px solid black;
+
   padding: 25px;
   background: url(https://yzoja.pl/wp-content/uploads/2015/10/P_20151006_1419041-800x600.jpg);
   background-repeat: repeat;
@@ -41,9 +41,6 @@ background-size: 1540px 1520px;
         </label>
         <input name="time" placeholder="Podaj datę" required minlength="3"></input>
       
-
-
-
         <label class="datatable__input-label">
           <font size="4">
           Nazwisko:
@@ -51,26 +48,19 @@ background-size: 1540px 1520px;
         </label>
         <input name="nick" placeholder="Podaj nazwisko" required minlength="3"></input>
       
-
-      
         <label class="datatable__input-label">
-<font size="4">
+        <font size="4">
           Patrol:   
         </font>
         </label>
         <input  name="patrolType" placeholder="Zmot/Pieszy?"></input>
       
-
-
         <label class="datatable__input-label">
           <font size="4">
           Wylegitymowano:
         </font>
         </label>
         <input name="people" placeholder="Ile osób?"></input>
-      
-    
-
       
         <label class="datatable__input-label">
           <font size="4">
@@ -79,9 +69,6 @@ background-size: 1540px 1520px;
         </label>
         <input name="interventions" placeholder="Interwencji/Ile/Jakie?"></input>
       
-
-
-      
         <label class="datatable__input-label">
           <font size="4">
           Ilość pouczeń:
@@ -89,8 +76,6 @@ background-size: 1540px 1520px;
         </label>
         <input name="instruction" placeholder="Ile Pouczeń?" ></input>
       
-
-
         <label class="datatable__input-label">
           <font size="4">
           Pouczeń za co:
@@ -98,8 +83,6 @@ background-size: 1540px 1520px;
         </label>
         <input name="instructionFor" placeholder="Za co poczenia?"></input>
       
-
-
         <label class="datatable__input-label">
           <font size="4">
           Ilość Mandatów:
@@ -107,16 +90,12 @@ background-size: 1540px 1520px;
         </label>
         <input name="tickets" placeholder="Ile Mandatów?" ></input>
       
-
-
         <label class="datatable__input-label">
           <font size="4">
           Mandatów za co:
         </font>
         </label>
         <input name="ticketsFor" placeholder="Za co pouczenia?" ></input>
-      
-
 
         <label class="datatable__input-label">
           <font size="4">
@@ -125,15 +104,12 @@ background-size: 1540px 1520px;
         </label>
         <input name="notes" placeholder="Ile notatek?" ></input>
       
-
         <label class="datatable__input-label">
           <font size="4">
           Kontroli pojazdów:
         </font>
         </label>
         <input name="vehicles" placeholder="Ile kontroli pojazdów" ></input>
-      
-
 
         <label class="datatable__input-label">
           <font size="4">
@@ -142,18 +118,19 @@ background-size: 1540px 1520px;
         </label>
         <input name="mrd5" placeholder="Ile mrd5?" ></input>
      
-
-
-
         <label class="datatable__input-label">
           <font size="4">
           Doprowadzeni:
         </font>
         </label>
         <input name="leads" placeholder="Ile/gdzie doprowadzony?" ></input>
-      </fieldset>
+      
+<label class="datatable__input-label">
+   <font size="4">
+            <!-- puste -->
+        </font>
+</label>
 
-      <fieldset class="datatable__row-section datatable__row-section--button-section">
         <button type="submit" data-result-add-button class="datatable__button">KLIKNIJ aby zapisać wyniki!</button>
       </fieldset>
       
@@ -192,7 +169,7 @@ background-size: 1540px 1520px;
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-patrolType-section>
       <label class="datatable__input-label">
-        Typ patrolu:
+        Patrol:
       </label>
       <iput name="patrolType" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-patrolType-paragraph></p>
@@ -204,11 +181,11 @@ background-size: 1540px 1520px;
       </label>
       <input name="people" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-people-paragraph></p>
-    </fieldset>
+   </fieldset>
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-interventions-section>
       <label class="datatable__input-label">
-        Ilość interwencji:
+        Interwencji:
       </label>
       <input name="interventions" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-interventions-paragraph></p>
@@ -216,7 +193,7 @@ background-size: 1540px 1520px;
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-instruction-section>
       <label class="datatable__input-label">
-        Ilość pouczeń:
+        Pouczeń:
       </label>
       <input name="instruction" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-instruction-paragraph></p>
@@ -224,7 +201,7 @@ background-size: 1540px 1520px;
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-instructionFor-section>
       <label class="datatable__input-label">
-        Pouczeń za co:
+        Pouczenia:
       </label>
       <input name="instructionFor" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-instructionFor-paragraph></p>
@@ -232,7 +209,7 @@ background-size: 1540px 1520px;
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-tickets-section>
       <label class="datatable__input-label">
-        Ilość Mandatów:
+        Mandatów:
       </label>
       <input name="tickets" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-tickets-paragraph></p>
@@ -240,7 +217,7 @@ background-size: 1540px 1520px;
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-ticketsFor-section>
       <label class="datatable__input-label">
-        Mandatów za co:
+        Mandaty:
       </label>
       <input name="ticketsFor" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-ticketsFor-paragraph></p>
@@ -256,7 +233,7 @@ background-size: 1540px 1520px;
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-vehicles-section>
       <label class="datatable__input-label">
-        Kontroli pojazdów:
+        Pojazdów:
       </label>
       <input name="vehicles" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-vehicles-paragraph></p>
@@ -264,7 +241,7 @@ background-size: 1540px 1520px;
 
 <fieldset class="datatable__row-section datatable__row-section--input-section" data-result-mrd5-section>
       <label class="datatable__input-label">
-        Kart MRD5:
+        MRD5:
       </label>
       <input name="mrd5" placeholder="Wprowadż poprawnie"></input>
       <p class="datatable__field-value" data-result-mrd5-paragraph></p>
@@ -278,10 +255,10 @@ background-size: 1540px 1520px;
       <p class="datatable__field-value" data-result-leads-paragraph></p>
     </fieldset>
 
-    <fieldset class="datatable__row-section datatable__row-section--button-section">
-      <button type="button" data-result-submit-update-button class="datatable__button datatable__button--editing">Zatwierdź edycję</button>
+<fieldset>
+     <!-- <button type="button" data-result-submit-update-button class="datatable__button datatable__button--editing">Zatwierdź edycję</button>
       <button type="button" data-result-edit-abort-button class="datatable__button datatable__button--editing">Anuluj edycję</button>
-      <button type="button" data-result-edit-button class="datatable__button">Edytuj</button>
+      Pola do wprowadzenia wynikow  <button type="button" data-result-edit-button class="datatable__button">Edytuj</button> -->
       <button type="button" data-result-delete-button class="datatable__button">Usuń</button>
     </fieldset>
   </form>
