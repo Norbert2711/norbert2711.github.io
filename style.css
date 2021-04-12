@@ -115,8 +115,7 @@ fieldset {
   font-size: 25px;
   font-weight: bold;
   color: #0000e6;
-  border-right-width: 3px;
-    border-left-width: 3px;
+  border: 2px solid black;
    }
 
 .datatable__row-section {
